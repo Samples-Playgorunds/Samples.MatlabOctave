@@ -6,10 +6,11 @@
 pkg load io statistics nan dataframe
 
 data = csv2cell('Pejcic_318.csv')
-data(1, :)
-data(2:end, :)
 
-mean(data)
+# data(1, :)
+# data(2:end, 5:6)
+
+# mean(data)
 # median(data)
 # mode(data)
 # range(data)

@@ -13,7 +13,7 @@ pkg load io statistics nan dataframe
 
 # addpath('/Users/katodix/Projects/Samples.MatlabOctave/samples/data_loading')
 
-data = dataframe('Pejcic_318.csv')
+df = dataframe('Pejcic_318.csv')
 
 # prvi arg.: od kojeg do kojeg retka; drugi arg.: koje varijable
 #df = data(1:318, ["ATV"; "ATT"; "AOP"; "ANN"; "MKUS"; "MPOL"; "MP20"; "MPRR"; "MTAP"; "MSDM"; "MDTR"; "MVIS"])
@@ -24,15 +24,16 @@ size(df)
 columns(df)
 rows(df)
 
-data(:, 5:8)
-df1 = data(:, 5:8)
+df(:, 5:8)
+df1 = df(:, 5:8)
 summary(df1)
 
-df2 = data(1:318, ["ATV"; "ATT"])
+df2 = df(1:318, ["ATV"; "ATT"])
+
 mean(df.ATV)
 statistics(df.ATV)
 
-mean(data)
+# mean(df)
 # median(data)
 # mode(data)
 # range(data)
