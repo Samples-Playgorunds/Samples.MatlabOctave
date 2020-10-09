@@ -4,10 +4,10 @@
 
 # if "OpenJDK 64-Bit Server VM warning..." then: javaMethod ("getProperty", "java.lang.System", "MyProperty");
 
-# pkg install -forge io
-# pkg install -forge statistics
-# pkg install -forge nan
-# pkg install -forge dataframe
+pkg install -forge io
+pkg install -forge statistics
+pkg install -forge nan
+pkg install -forge dataframe
 
 pkg load io statistics nan dataframe
 
