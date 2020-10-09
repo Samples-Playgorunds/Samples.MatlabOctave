@@ -72,16 +72,9 @@ mean_custom = sum_custom / count(1)
 disp ("mean(data_frame_02_filtered_parial_02.ATV) = ")
 mean(data_frame_02_filtered_parial_02.ATV)
 
+disp ("statistics(data_frame_02_filtered_parial_02.ATV) = ")
+statistics(data_frame_02_filtered_parial_02.ATV)
 
-
-
-
-
-
-# data_frame2 = data_frame(1:318, ["ATV"; "ATT"])
-# 
-# mean(data_frame.ATV)
-# statistics(data_frame.ATV)
 
 # mean(data_frame)
 # median(data)
