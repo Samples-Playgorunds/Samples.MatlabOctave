@@ -4,12 +4,15 @@
 
 # if "OpenJDK 64-Bit Server VM warning..." then: javaMethod ("getProperty", "java.lang.System", "MyProperty");
 
-pkg install -forge io
-pkg install -forge statistics
-pkg install -forge nan
-pkg install -forge dataframe
 
-pkg load io statistics nan dataframe
+% http://octave.org/doc/v4.2.0/Script-Files.html
+% https://octave.org/doc/v4.2.1/Function-Files.html
+% https://stackoverflow.com/questions/38647367/run-script-file-from-other-script-file-in-octave
+% https://octave.sourceforge.io/octave/function/load.html
+source("packages.m")
+
+% run("file1.m") 
+
 
 # addpath('/Users/katodix/Projects/Samples.MatlabOctave/samples/data_loading')
 
