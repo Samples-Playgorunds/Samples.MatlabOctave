@@ -33,8 +33,8 @@ rows(data_frame_01_full_from_csv)
 
 
 disp ("=============================================================================================================================")
-disp ("data_frame_01_filtered_parial")
-        data_frame_01_filtered_parial = data_frame_01_full_from_csv(
+disp ("data_frame_02_filtered_parial_01")
+data_frame_02_filtered_parial_01 = data_frame_01_full_from_csv(
         % rows from:to
         1:318,
         % columns (statistical varibles)        
@@ -42,9 +42,22 @@ disp ("data_frame_01_filtered_parial")
     )
 
 
-# data_frame(:, 5:8)
-# data_frame1 = data_frame(:, 5:8)
-# summary(data_frame1)
+disp ("=============================================================================================================================")
+disp ("data_frame_02_filtered_parial_02")
+data_frame_02_filtered_parial_02 = data_frame_01_full_from_csv(:, 5:8)
+
+
+
+
+disp ("=============================================================================================================================")
+disp ("statistics")
+
+disp ("summary(data_frame_02_filtered_parial_02)")
+summary(data_frame_02_filtered_parial_02)
+disp ("mean(data_frame_02_filtered_parial_02.ATV)")
+mean(data_frame_02_filtered_parial_02.ATV)
+
+
 # 
 # data_frame2 = data_frame(1:318, ["ATV"; "ATT"])
 # 
