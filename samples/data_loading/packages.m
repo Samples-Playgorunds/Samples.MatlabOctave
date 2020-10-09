@@ -7,10 +7,10 @@
 
 pkg install -forge io
 pkg install -forge statistics
-pkg install -forge nan
 pkg install -forge dataframe
+pkg install -forge nan
 
 pkg load io 
 pkg load statistics 
-pkg load nan 
 pkg load dataframe
+pkg load nan 
