@@ -21,25 +21,35 @@ pkg load dataframe
 
 # addpath('/Users/katodix/Projects/Samples.MatlabOctave/samples/data_loading')
 
-data_frame = dataframe('Pejcic_318.csv')
+disp ("=============================================================================================================================")
+disp ("data_frame_01_full_from_csv")
+data_frame_01_full_from_csv = dataframe('Pejcic_318.csv')
+class(data_frame_01_full_from_csv)
+data_frame_01_full_from_csv.colnames
+size(data_frame_01_full_from_csv)
+columns(data_frame_01_full_from_csv)
+rows(data_frame_01_full_from_csv)
 
-# prvi arg.: od kojeg do kojeg retka; drugi arg.: koje varijable
-#data_frame = data(1:318, ["ATV"; "ATT"; "AOP"; "ANN"; "MKUS"; "MPOL"; "MP20"; "MPRR"; "MTAP"; "MSDM"; "MDTR"; "MVIS"])
 
-class(data_frame)
-data_frame.colnames
-size(data_frame)
-columns(data_frame)
-rows(data_frame)
 
-data_frame(:, 5:8)
-data_frame1 = data_frame(:, 5:8)
-summary(data_frame1)
+disp ("=============================================================================================================================")
+disp ("data_frame_01_filtered_parial")
+        data_frame_01_filtered_parial = data_frame_01_full_from_csv(
+        % rows from:to
+        1:318,
+        % columns (statistical varibles)        
+        ["ATV"; "ATT"; "AOP"; "ANN"; "MKUS"; "MPOL"; "MP20"; ]
+    )
 
-data_frame2 = data_frame(1:318, ["ATV"; "ATT"])
 
-mean(data_frame.ATV)
-statistics(data_frame.ATV)
+# data_frame(:, 5:8)
+# data_frame1 = data_frame(:, 5:8)
+# summary(data_frame1)
+# 
+# data_frame2 = data_frame(1:318, ["ATV"; "ATT"])
+# 
+# mean(data_frame.ATV)
+# statistics(data_frame.ATV)
 
 # mean(data_frame)
 # median(data)
