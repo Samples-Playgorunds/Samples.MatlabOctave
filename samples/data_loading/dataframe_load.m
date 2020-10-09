@@ -9,7 +9,12 @@
 % https://octave.org/doc/v4.2.1/Function-Files.html
 % https://stackoverflow.com/questions/38647367/run-script-file-from-other-script-file-in-octave
 % https://octave.sourceforge.io/octave/function/load.html
-source("packages.m")
+% source("packages.m")
+
+pkg load io 
+pkg load statistics 
+pkg load dataframe
+% pkg load nan 
 
 % run("file1.m") 
 
