@@ -57,10 +57,10 @@ summary(data_frame_02_filtered_parial_02)
 disp ("mean(data_frame_02_filtered_parial_02.ATV)")
 mean(data_frame_02_filtered_parial_02.ATV)
 
-sum_custom =0.0;
+sum_custom = 0.0;
 for i = 1:rows(data_frame_02_filtered_parial_02.ATV)
     sum_custom = sum_custom + data_frame_02_filtered_parial_02.ATV(i)
-      printf("data_frame_02_filtered_parial_02.ATV(%d) = %f\n", i, data_frame_02_filtered_parial_02.ATV(i));
+    printf("data_frame_02_filtered_parial_02.ATV(%d) = %f\n", i, data_frame_02_filtered_parial_02.ATV(i));
 endfor
 
 disp ("count = size(data_frame_02_filtered_parial_02.ATV) = ")
@@ -69,7 +69,14 @@ count = size(data_frame_02_filtered_parial_02.ATV)
 disp ("mean_custom = sum_custom / count(1) = ")
 mean_custom = sum_custom / count(1)
 
-# 
+disp ("mean(data_frame_02_filtered_parial_02.ATV) = ")
+mean(data_frame_02_filtered_parial_02.ATV)
+
+
+
+
+
+
 
 # data_frame2 = data_frame(1:318, ["ATV"; "ATT"])
 # 
