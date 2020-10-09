@@ -11,32 +11,9 @@
 
 pkg load io statistics nan dataframe
 
-addpath('../../../externals/Core.Math.Samples/data')
+# addpath('/Users/katodix/Projects/Samples.MatlabOctave/samples/data_loading')
 
-# data = csv2cell('Pejcic_318.csv')
-# data(1, :) %
-# data(2:end, :) %
-
-# dlmread ('Pejcic_318.csv',',',1,5)
-
-# csvread('Pejcic_318.csv')
-# data = csvread('Pejcic_318.csv')
-
-mean(data)
-median(data)
-mode(data)
-range(data)
-var(data)
-std(data)
-skewness(data)
-kurtosis(data)
-
-statistics(data)
-
-#############
-# DataFrame #
-#############
-data = dataframe('Pejcic_318.csv')
+df = dataframe('Pejcic_318.csv')
 
 # prvi arg.: od kojeg do kojeg retka; drugi arg.: koje varijable
 #df = data(1:318, ["ATV"; "ATT"; "AOP"; "ANN"; "MKUS"; "MPOL"; "MP20"; "MPRR"; "MTAP"; "MSDM"; "MDTR"; "MVIS"])
@@ -47,10 +24,22 @@ size(df)
 columns(df)
 rows(df)
 
-data(:, 5:8)
-df1 = data(:, 5:8)
+df(:, 5:8)
+df1 = df(:, 5:8)
 summary(df1)
 
-df2 = data(1:318, ["ATV"; "ATT"])
+df2 = df(1:318, ["ATV"; "ATT"])
+
 mean(df.ATV)
 statistics(df.ATV)
+
+# mean(df)
+# median(data)
+# mode(data)
+# range(data)
+# var(data)
+# std(data)
+# skewness(data)
+# kurtosis(data)
+
+# statistics(data)
