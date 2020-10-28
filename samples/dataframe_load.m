@@ -11,15 +11,10 @@
 % https://octave.sourceforge.io/octave/function/load.html
 % source("packages.m")
 
-pkg load io 
-pkg load statistics 
-pkg load dataframe
-% pkg load nan 
+pkg load io statistics dataframe nan
 
 % run("file1.m") 
 
-
-# addpath('/Users/katodix/Projects/Samples.MatlabOctave/samples/data_loading')
 
 disp ("=============================================================================================================================")
 disp ("data_frame_01_full_from_csv")

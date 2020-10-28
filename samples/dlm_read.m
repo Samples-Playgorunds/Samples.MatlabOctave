@@ -5,10 +5,11 @@
 
 pkg load io statistics nan dataframe
 
-
 # Read numeric data from the text file FILE which uses the delimiter SEP between data values.
 
-dlmread ('Pejcic_318.csv',',',1,5)
+# addpath('/Users/katodix/Projects/Samples.MatlabOctave/externals/Core.Math.Data/data/HolisticWare.Core.Sample.Data/CSV')
+
+data = dlmread('Pejcic_318.csv',',',1,5) % read only numeric column ! 
 
 mean(data)
 # median(data)
