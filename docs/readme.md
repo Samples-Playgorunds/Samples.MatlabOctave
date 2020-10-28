@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # readme.md
 
 ## Links/References
@@ -91,3 +92,11 @@
 *   https://stackoverflow.com/questions/1624060/machine-learning-libraries-in-c-sharp
 
 *   https://jikeme.com/using-a-neural-network-created-by-cntk-or-tensorflow-in-a-c-program
+=======
+# Readme
+
+*   http://calliope.dem.uniud.it/CLASS/ING-AMB/2018/GNU-Octave-for-beginners.pdf
+
+
+
+>>>>>>> b2eede435a7720d0e460c8b77449f20f9ddec3ec
